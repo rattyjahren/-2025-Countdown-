@@ -1,0 +1,60 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff8c00, #ff0080);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+}
+
+h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 3s ease-in-out;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff0080;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4d94;
+}
+
+/* Countdown styling */
+.countdown {
+    font-size: 2rem;
+    margin-top: 30px;
+    font-weight: bold;
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
